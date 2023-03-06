@@ -42,21 +42,17 @@ for day in num_days:
         daily_list = ((random.sample(wed,11)))
         for nm in daily_list:
             dict[nm] += 1
-        print(day + ",")
-        print(*daily_list, sep=",")
+        print(day+"," + ",".join(daily_list))
 
     elif day == "Thursday":
             daily_list = ((random.sample(wed,10)))
             for nm in daily_list:
                 dict[nm] += 1
-            print(day + ",")
-            print(*daily_list, sep=",")
-
+            print(day+"," + ",".join(daily_list))
     else:
             daily_list = ((random.sample(wed,9)))
             for nm in daily_list:
                 dict[nm] += 1
-            print(day + ",")
-            print(*daily_list, sep=",")
+            print(day+"," + ",".join(daily_list)) 
 
 print(dict)
